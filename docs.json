@@ -14,16 +14,18 @@
         "tab": "Home",
         "groups": [
           {
-            "group": "Welcome",
-            "pages": [
-              "home/welcome"
-            ]
+            "group": "Index",
+            "pages": ["index"]
           }
         ]
       },
       {
         "tab": "Game Panel",
         "groups": [
+          {
+            "group": "Index",
+            "pages": ["game-panel/index"]
+          },
           {
             "group": "Game Panel Basics",
             "pages": [
@@ -38,6 +40,10 @@
       {
         "tab": "Minecraft Java",
         "groups": [
+          {
+            "group": "Index",
+            "pages": ["minecraft-java/index"]
+          },
           {
             "group": "Game Panel Guides",
             "pages": [
@@ -101,6 +107,10 @@
         "tab": "Minecraft Bedrock",
         "groups": [
           {
+            "group": "Index",
+            "pages": ["minecraft-bedrock/index"]
+          },
+          {
             "group": "Addons and Plugins",
             "pages": [
               "minecraft-bedrock/addons-and-plugins/adding-custom-behavior-packs-or-resource-packs",
@@ -154,21 +164,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://hostbyte.net",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Game Panel",
-          "href": "https://game.hostbyte.net",
-          "icon": "globe"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/logo.svg",
@@ -177,30 +173,43 @@
   "navbar": {
     "links": [
       {
+        "label": "Home",
+        "href": "https://docs.hostbyte.net",
+        "icon": "home"
+      },
+      {
+        "label": "Website",
+        "href": "https://hostbyte.net",
+        "icon": "globe"
+      },
+      {
         "label": "Support",
-        "href": "https://discord.gg/KUHW6QYzH6"
+        "href": "https://discord.gg/KUHW6QYzH6",
+        "icon": "discord"
+      },
+      {
+        "label": "Game Panel",
+        "href": "https://game.hostbyte.net",
+        "icon": "gamepad"
+      },
+      {
+        "label": "Status Page",
+        "href": "https://status.hostbyte.net",
+        "icon": "signal"
       },
       {
         "label": "TrustPilot",
-        "href": "https://www.trustpilot.com/review/hostbyte.net"
+        "href": "https://www.trustpilot.com/review/hostbyte.net",
+        "icon": "clipboard"
       }
-    ]
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
   "footer": {
     "socials": {
       "discord": "https://discord.gg/KUHW6QYzH6"
     }
+  },
+  "fonts": {
+    "family": "Space Grotesk"
   }
 }
