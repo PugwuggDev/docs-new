@@ -163,6 +163,22 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Garry's Mod",
+        "groups": [
+          {
+            "group": "Garry's Mod Basics",
+            "pages": [
+              "garrys-mod/garrys-mod-basics/gmod-server-hosting-common-features-explained",
+              "garrys-mod/garrys-mod-basics/how-to-access-your-gmod-control-panel",
+              "garrys-mod/garrys-mod-basics/how-to-join-your-garrysmod-server",
+              "garrys-mod/garrys-mod-basics/how-to-restart-or-reset-your-gmod-server",
+              "garrys-mod/garrys-mod-basics/understanding-gmod-server-requirements-and-slots",
+              "garrys-mod/garrys-mod-basics/what-is-a-garrysmod-server-and-how-does-it-work"
+            ]
+          }
+        ]
       }
     ]
   },
