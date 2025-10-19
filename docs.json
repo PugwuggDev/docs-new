@@ -100,6 +100,15 @@
               "minecraft-java/troubleshooting/server-wont-start-common-causes-and-fixes",
               "minecraft-java/troubleshooting/why-cant-i-connect-to-my-server"
             ]
+          },
+          {
+            "group": "Tips and Guides",
+            "pages": [
+              "minecraft-java/tips-and-guides/advanced-building-techniques",
+              "minecraft-java/tips-and-guides/how-to-optimize-server-performance",
+              "minecraft-java/tips-and-guides/understanding-redstone-mechanics",
+              "minecraft-java/tips-and-guides/ways-to-enhance-multiplayer-experience"
+            ]
           }
         ]
       },
