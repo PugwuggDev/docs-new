@@ -1,0 +1,50 @@
+# How to Install Addons on a Minecraft Bedrock Server
+
+Addons are the main way to customize Minecraft Bedrock servers. They include **behavior packs** (which change game logic) and **resource packs** (which modify textures, sounds, etc.). This guide shows how to install them on your Bedrock server. ✔️
+
+***
+
+### ⛏️ Step 1: Find Compatible Addons
+
+Addons usually come in `.mcpack` or `.zip` format. You can find them on sites like:
+
+* ➡️ [MCPE DL](https://mcpedl.com/)
+* ➡️ CurseForge Bedrock section
+* ➡️ Other trusted Minecraft addon communities
+
+✔️ Make sure the addon is designed for Bedrock Edition, not Java.
+
+***
+
+### ⚔️ Step 2: Upload the Addon Files
+
+Once downloaded, upload the files to your server:
+
+* ➡️ Log into your game panel
+* ➡️ Open the File Manager
+* ➡️ Navigate to the `behavior_packs` or `resource_packs` folder
+* ➡️ Upload the `.mcpack` or extracted folder contents here
+
+✔️ You may need to extract `.zip` files before uploading.
+
+***
+
+### ➕ Step 3: Enable the Addon in `world_behavior_packs.json` or `world_resource_packs.json`
+
+To activate the addon, you’ll need to register it in the world’s pack configuration file:
+
+* ➡️ Open the `worlds` folder, then the folder for your active world
+* ➡️ Edit `world_behavior_packs.json` or `world_resource_packs.json`
+* ✔️ Insert the addon’s UUID and version (usually listed in the addon’s `manifest.json`)
+
+❗ This step is necessary for the server to load the addon correctly.
+
+***
+
+### ⏰ Step 4: Restart the Server
+
+After uploading and configuring the addon, restart your server from the panel to apply changes. ✅
+
+***
+
+### ✅ Backup Before Major Changes

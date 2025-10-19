@@ -1,0 +1,49 @@
+# Adding Custom Behavior Packs or Resource Packs
+
+Want to customize your Bedrock server’s gameplay or visuals? You can upload your own **behavior packs** (for features) and **resource packs** (for textures, UI, sounds, etc.). This guide explains how to install and activate them properly. ✔️
+
+***
+
+### ⛏️ Step 1: Download or Create the Pack
+
+* ➡️ Packs must be for **Bedrock Edition** and typically come in `.mcpack` or `.zip` format
+* ➡️ You can find community-made packs at sites like [mcpedl.com](https://mcpedl.com/)
+* ✔️ Make sure the pack includes a valid `manifest.json` file
+
+***
+
+### ➕ Step 2: Upload the Pack to Your Server
+
+* ➡️ Log into your panel and open the **File Manager**
+* ➡️ Navigate to one of the following folders:
+  * `behavior_packs` – for behavior packs
+  * `resource_packs` – for resource packs
+* ➡️ Upload the pack folder or contents
+
+✔️ If using a `.zip` file, extract it before uploading. Only upload the internal folder containing the `manifest.json`.
+
+***
+
+### ⚔️ Step 3: Activate the Pack in Your World
+
+To apply a pack to your world:
+
+* ➡️ Go to your `worlds` folder and open your active world folder
+* ➡️ Edit the `world_behavior_packs.json` or `world_resource_packs.json` file
+* ✔️ Add the UUID and version from the pack’s `manifest.json`
+
+This tells the server to load the pack at startup. ✅
+
+***
+
+### ⏰ Step 4: Restart Your Server
+
+Once you’ve uploaded and configured the pack, restart your server for the changes to take effect.
+
+***
+
+### ✅ Backup Before Making Changes
+
+Before editing world files or installing new content, we recommend creating a backup. ➡️ Follow this guide for steps:
+
+* [How to Reset or Restart Your Minecraft Bedrock Server](https://www.hostbyte.net/billing/knowledgebase/39/How-to-Reset-or-Restart-Your-Minecraft-Bedrock-Server.html)

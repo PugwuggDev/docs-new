@@ -1,0 +1,50 @@
+---
+description: Learn how to enable or disable the whitelist on your Minecraft server.
+---
+
+# How to Enable/Disable Whitelist
+
+The whitelist system in Minecraft allows only approved players to join your server. This is useful for private communities or testing servers. You can enable or disable the whitelist in a few quick steps using our panel. ✅
+
+---
+
+## 🛠️ Option 1: Using the Panel’s Console
+
+You can turn the whitelist on or off directly through the console:
+
+- ➡️ Open your server's **Console** tab
+- ➡️ Type `whitelist on` and press Enter to enable it
+- ➡️ Type `whitelist off` to disable it
+
+---
+
+## 🛠️ Option 2: Editing the server.properties File
+
+For a permanent setting:
+
+- ➡️ Go to **File Manager**
+- ➡️ Open **server.properties**
+- ➡️ Find the line `white-list=false`
+- ➡️ Change it to `white-list=true` to enable (or back to `false` to disable)
+- ➡️ Save and restart the server
+
+---
+
+## ➕ Adding Players to the Whitelist
+
+Once the whitelist is enabled, only added players can join. To add them:
+
+- ➡️ In the console, type `whitelist add PlayerName`
+- ➡️ To remove a player: `whitelist remove PlayerName`
+
+✅ You can also manage the `whitelist.json` file directly in the File Manager if needed.
+
+---
+
+## ❗ Common Whitelist Issues
+
+- ❌ **“You are not whitelisted”** – Player must be added to the whitelist
+- ❌ **Spelling or capitalization error** – Player names must match exactly
+- ✅ Make sure the server was restarted after editing `server.properties`
+
+If you need help managing your whitelist, our support team is always ready to assist. ✅

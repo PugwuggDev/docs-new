@@ -1,0 +1,49 @@
+# Addons/Plugins Aren’t Working – What To Do (Bedrock)
+
+If your Bedrock server’s addons or plugins aren’t working properly, it’s usually caused by file structure issues, version mismatches, or incomplete installations. This guide will help you troubleshoot and resolve common problems. ⚠️
+
+***
+
+### ⛏️ 1. Confirm You’re Using the Right Server Type
+
+* ➡️ **Addons** (behavior/resource packs) are supported on Bedrock Dedicated Servers
+* ➡️ **Plugins** only work with **PocketMine-MP** or **Nukkit** server types
+
+❌ Plugins won’t work on standard Bedrock software. Make sure you’ve installed the correct server version from your panel.
+
+***
+
+### ➕ 2. Check Addon or Plugin File Structure
+
+* ➡️ Addons must include `manifest.json` inside the root of the behavior/resource pack
+* ➡️ Plugins must be `.phar` (for PocketMine) or placed correctly in a `plugins` folder
+
+✔️ Incorrect folder layouts are a leading cause of installation issues.
+
+***
+
+### ⚔️ 3. Look for Errors in the Console
+
+* ➡️ Open the **Console** and restart your server
+* ➡️ Watch for red error lines related to loading packs or plugin failures
+
+❗ These messages often pinpoint the exact file or plugin that’s failing to load.
+
+***
+
+### ⏰ 4. Version Compatibility
+
+* ➡️ Some addons or plugins only work with specific Minecraft versions
+* ➡️ Check the author’s page to see which version the addon/plugin supports
+* ✔️ You may need to downgrade or upgrade your server to match
+
+***
+
+### ➖ 5. Try a Clean Reinstall
+
+If multiple addons or plugins are failing, try removing them all and testing one at a time:
+
+* ➡️ Remove all custom content from the `resource_packs`, `behavior_packs`, or `plugins` folder
+* ➡️ Add items back one-by-one and restart the server after each
+
+✔️ This helps identify which file is causing the issue.

@@ -1,0 +1,47 @@
+# How to Check Bedrock Server Logs for Errors
+
+If your Bedrock server isn’t working correctly — whether it's crashing, lagging, or refusing to start — checking the server logs is the first step in identifying the cause. Here's how to find and read those logs. ✔️
+
+***
+
+### ⛏️ 1. Access the Console Log
+
+* ➡️ Log into your control panel
+* ➡️ Select your server and click on the **Console** tab
+* ➡️ The live console shows real-time events as the server boots and runs
+
+✔️ Look for red or yellow lines — these usually indicate warnings or errors.
+
+***
+
+### ➕ 2. Review the Latest.log File (If Available)
+
+* ➡️ Open the **File Manager**
+* ➡️ Look for a file named `logs/latest.log` or similar (not all Bedrock builds generate it)
+* ➡️ Download or open it to review full startup history
+
+⚠️ This can contain more detail than the live console alone.
+
+***
+
+### ⚔️ 3. Common Log Error Types
+
+* ❌ **Addon or Pack Errors** – Often related to invalid `manifest.json` or missing files
+* ❌ **File Not Found** – A required file was deleted or renamed
+* ❌ **JSON Parsing** – Incorrect formatting in config files like `permissions.json`
+
+➡️ Match the error to recent changes (new packs, edits, etc.) to find the cause quickly.
+
+***
+
+### ⏰ 4. Use a JSON Validator
+
+If the error relates to a JSON file, copy the contents and use a free online **JSON validator** to find and fix formatting mistakes.
+
+✔️ Even a missing comma or extra bracket can crash your server.
+
+***
+
+➡️ For help with installation, see our guides on installing addons and plugins. ✅
+
+If you’re unsure how to fix a specific error, feel free to reach out or submit a support ticket — we’re here to assist. ✔️

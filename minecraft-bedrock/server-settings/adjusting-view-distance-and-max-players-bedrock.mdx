@@ -1,0 +1,43 @@
+# Adjusting View Distance and Max Players (Bedrock)
+
+Fine-tuning your Bedrock server’s performance can make a big difference in player experience. This guide covers how to change the **view distance** and **maximum player limit** through the `server.properties` file. ✔️
+
+***
+
+### ⛏️ What Is View Distance?
+
+**View distance** controls how many chunks are loaded around each player. A lower number improves performance but reduces how far players can see.
+
+* `view-distance=10` (default)
+* ➡️ Lower = less lag, especially with multiple players
+* ✔️ Ideal range: 6–10 for most servers
+
+❗ High view distance on low-memory plans can cause lag.
+
+***
+
+### ➕ How to Change View Distance
+
+* ➡️ Log into your panel and open the **File Manager**
+* ➡️ Open `server.properties`
+* ➡️ Find `view-distance=` and enter a new value
+* ➡️ Save the file and restart the server
+
+✔️ The new view distance will apply after restart.
+
+***
+
+### ⏰ Changing the Max Player Limit
+
+* ➡️ In `server.properties`, locate `max-players=10`
+* ➡️ Change it to the number of players you want to allow
+* ✔️ Example: `max-players=20` for a 20-player server
+* ➡️ Save and restart your server
+
+⚠️ Keep this number realistic for your hosting plan’s resources.
+
+***
+
+➡️ For help with installation, see our guides on installing addons and plugins. ✅
+
+Need help? Open a support ticket or reach out to our team — we’re happy to assist. ✔️

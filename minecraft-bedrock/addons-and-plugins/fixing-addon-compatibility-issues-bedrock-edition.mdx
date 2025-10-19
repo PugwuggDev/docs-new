@@ -1,0 +1,47 @@
+# Fixing Addon Compatibility Issues (Bedrock Edition)
+
+If your Minecraft Bedrock server crashes or fails to load correctly after installing an addon, it's likely a compatibility issue. This guide covers the most common addon-related problems and how to fix them. ⚠️
+
+***
+
+### ⛏️ 1. Check the Manifest File
+
+Each behavior or resource pack must include a `manifest.json` file with the correct structure:
+
+* ✔️ UUIDs for the pack and modules
+* ✔️ Version format (e.g. `[1, 0, 0]`)
+* ✔️ Proper JSON syntax (no trailing commas or typos)
+
+❌ If the server console shows a manifest error, open the file and fix formatting issues using a JSON validator.
+
+***
+
+### ➕ 2. Confirm Compatibility with Bedrock Version
+
+Make sure the addon was made for the same version your server is running:
+
+* ✔️ Older packs may break on newer versions
+* ✔️ Update the pack or find a newer version from the creator
+
+➡️ You can view your server’s Bedrock version in the panel under Configuration or on the server dashboard.
+
+***
+
+### ⚔️ 3. Verify Pack Activation in JSON Files
+
+Behavior and resource packs must be registered in the correct files:
+
+* ➡️ `world_behavior_packs.json`
+* ➡️ `world_resource_packs.json`
+
+Each entry should match the UUID and version listed in the addon’s `manifest.json`. A missing or incorrect UUID will prevent the pack from loading. ❗
+
+***
+
+### ⏰ 4. Restart the Server After Changes
+
+Always restart the server after uploading or modifying addons. Changes won’t take effect until the server reloads the world and its pack data. ✅
+
+***
+
+### ✅ Backup and Recovery Tip

@@ -1,0 +1,51 @@
+---
+description: Learn how to optimize view distance and max players settings for your Minecraft server.
+---
+
+# Adjusting View Distance and Max Players
+
+View distance and max players are two critical server settings that directly impact performance and gameplay experience. Understanding how to configure these settings properly can help optimize your server's performance while maintaining a good player experience. ⚙️
+
+---
+
+## ⚙️ Understanding View Distance
+
+View distance determines how far players can see in the game world. This setting affects:
+
+- ✅ **Server Performance** - Higher view distance requires more processing power
+- ✅ **Client Performance** - Affects how much data clients need to render
+- ✅ **Network Usage** - More data needs to be sent to players
+- ✅ **Memory Usage** - More chunks loaded in memory
+
+### ⚙️ Recommended View Distance Settings
+
+| **Server Type**       | **View Distance** | **Use Case**                         |
+| --------------------- | ----------------- | ------------------------------------ |
+| **Survival/Creative** | 8-12              | Balanced performance and visibility  |
+| **PvP/Arena**         | 6-8               | Focused gameplay, better performance |
+| **Modded Servers**    | 4-8               | Reduced for mod complexity           |
+| **Low-End Hosting**   | 4-6               | Minimal resource usage               |
+
+---
+
+## ⚙️ Understanding Max Players
+
+The max players setting determines how many players can join your server simultaneously. This affects:
+
+- ✅ **Concurrent Connections** - How many players can join simultaneously
+- ✅ **Resource Allocation** - More players = more server resources needed
+- ✅ **Performance Impact** - Each player consumes CPU, memory, and bandwidth
+
+### ⚙️ Calculating Optimal Max Players
+
+**Basic Formula:**
+
+```
+Max Players = (Available RAM - Reserved RAM) / RAM per Player
+```
+
+**Recommended RAM per Player:**
+
+- ✅ **Vanilla Server** - 100-200 MB per player
+- ✅ **Modded Server** - 200-400 MB per player
+- ✅ **Heavy Modpacks** - 400-800 MB per player

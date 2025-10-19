@@ -14,9 +14,42 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Game Panel",
             "pages": [
-              "development"
+              "game-panel-guides/creating-subusers-for-server-management",
+              "game-panel-guides/getting-started-with-the-game-panel-dashboard",
+              "game-panel-guides/how-to-schedule-server-backups-or-restarts",
+              "game-panel-guides/how-to-start-stop-or-restart-your-server",
+              "game-panel-guides/using-the-console-to-run-minecraft-commands"
+            ]
+          },
+          {
+            "group": "Minecraft Basics",
+            "pages": [
+              "minecraft-basics/how-to-access-your-control-panel",
+              "minecraft-basics/how-to-connect-to-your-minecraft-server",
+              "minecraft-basics/how-to-reset-or-restart-your-minecraft-server",
+              "minecraft-basics/java-vs-bedrock-edition"
+            ]
+          },
+          {
+            "group": "Server Settings",
+            "pages": [
+              "server-settings/adjusting-view-distance-and-max-players",
+              "server-settings/changing-the-world-seed-or-starting-a-new-world",
+              "server-settings/editing-the-server.properties-file-game-mode-pvp-etc.",
+              "server-settings/how-to-change-server-version-vanilla-spigot-forge",
+              "server-settings/how-to-enable-disable-whitelist"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/how-to-check-server-logs-for-errors",
+              "troubleshooting/how-to-fix-high-ping-or-lag-on-minecraft-servers",
+              "troubleshooting/my-mods-plugins-arent-working-what-to-do",
+              "troubleshooting/server-outdated-or-incompatible-version",
+              "troubleshooting/server-wont-start-common-causes-and-fixes"
             ]
           }
         ]
@@ -24,6 +57,63 @@
       {
         "tab": "API reference",
         "groups": []
+      },
+      {
+        "tab": "Minecraft-Bedrock",
+        "groups": [
+          {
+            "group": "Addons and Plugins",
+            "pages": [
+              "minecraft-bedrock/addons-and-plugins/adding-custom-behavior-packs-or-resource-packs",
+              "minecraft-bedrock/addons-and-plugins/fixing-addon-compatibility-issues-bedrock-edition",
+              "minecraft-bedrock/addons-and-plugins/how-to-install-addons-on-a-minecraft-bedrock-server",
+              "minecraft-bedrock/addons-and-plugins/installing-plugins-on-bedrock-using-pocketmine-or-nukkit",
+              "minecraft-bedrock/addons-and-plugins/recommended-plugins-and-addons-for-bedrock-survival-creative-servers"
+            ]
+          },
+          {
+            "group": "Game Panel Guides",
+            "pages": [
+              "minecraft-bedrock/game-panel-guides/creating-subusers-for-bedrock-server-management",
+              "minecraft-bedrock/game-panel-guides/getting-started-with-the-game-panel-dashboard-bedrock",
+              "minecraft-bedrock/game-panel-guides/how-to-schedule-server-backups-or-restarts-bedrock",
+              "minecraft-bedrock/game-panel-guides/how-to-start-stop-or-restart-your-bedrock-server",
+              "minecraft-bedrock/game-panel-guides/uploading-files-via-file-manager-or-ftp-bedrock",
+              "minecraft-bedrock/game-panel-guides/using-the-console-to-run-bedrock-server-commands"
+            ]
+          },
+          {
+            "group": "Minecraft Basics",
+            "pages": [
+              "minecraft-bedrock/minecraft-basics/how-to-access-your-control-panel",
+              "minecraft-bedrock/minecraft-basics/how-to-connect-to-your-minecraft-bedrock-server",
+              "minecraft-bedrock/minecraft-basics/how-to-reset-or-restart-your-minecraft-bedrock-server",
+              "minecraft-bedrock/minecraft-basics/java-vs-bedrock-edition-edited-updated",
+              "minecraft-bedrock/minecraft-basics/understanding-server-slots-and-performance-on-bedrock",
+              "minecraft-bedrock/minecraft-basics/what-is-a-minecraft-bedrock-server-and-how-does-it-work"
+            ]
+          },
+          {
+            "group": "Server Settings",
+            "pages": [
+              "minecraft-bedrock/server-settings/adjusting-view-distance-and-max-players-bedrock",
+              "minecraft-bedrock/server-settings/changing-the-world-seed-or-generating-a-new-world-bedrock",
+              "minecraft-bedrock/server-settings/editing-the-server.properties-file-on-bedrock",
+              "minecraft-bedrock/server-settings/how-to-change-server-version-bedrock-edition",
+              "minecraft-bedrock/server-settings/how-to-enable-disable-whitelist-bedrock",
+              "minecraft-bedrock/server-settings/how-to-set-up-op-admin-permissions-bedrock"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "minecraft-bedrock/troubleshooting/addons-plugins-arent-working-what-to-do-bedrock",
+              "minecraft-bedrock/troubleshooting/bedrock-server-wont-start-common-causes-and-fixes",
+              "minecraft-bedrock/troubleshooting/fixing-server-outdated-or-incompatible-version-errors-bedrock",
+              "minecraft-bedrock/troubleshooting/how-to-check-bedrock-server-logs-for-errors"
+            ]
+          }
+        ]
       }
     ],
     "global": {
