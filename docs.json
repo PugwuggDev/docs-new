@@ -11,55 +11,83 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Game Panel",
         "groups": [
           {
-            "group": "Game Panel",
+            "group": "Game Panel Basics",
             "pages": [
-              "game-panel-guides/creating-subusers-for-server-management",
-              "game-panel-guides/getting-started-with-the-game-panel-dashboard",
-              "game-panel-guides/how-to-schedule-server-backups-or-restarts",
-              "game-panel-guides/how-to-start-stop-or-restart-your-server",
-              "game-panel-guides/using-the-console-to-run-minecraft-commands"
-            ]
-          },
-          {
-            "group": "Minecraft Basics",
-            "pages": [
-              "minecraft-basics/how-to-access-your-control-panel",
-              "minecraft-basics/how-to-connect-to-your-minecraft-server",
-              "minecraft-basics/how-to-reset-or-restart-your-minecraft-server",
-              "minecraft-basics/java-vs-bedrock-edition"
-            ]
-          },
-          {
-            "group": "Server Settings",
-            "pages": [
-              "server-settings/adjusting-view-distance-and-max-players",
-              "server-settings/changing-the-world-seed-or-starting-a-new-world",
-              "server-settings/editing-the-server.properties-file-game-mode-pvp-etc.",
-              "server-settings/how-to-change-server-version-vanilla-spigot-forge",
-              "server-settings/how-to-enable-disable-whitelist"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "troubleshooting/how-to-check-server-logs-for-errors",
-              "troubleshooting/how-to-fix-high-ping-or-lag-on-minecraft-servers",
-              "troubleshooting/my-mods-plugins-arent-working-what-to-do",
-              "troubleshooting/server-outdated-or-incompatible-version",
-              "troubleshooting/server-wont-start-common-causes-and-fixes"
+              "game-panel/game-panel-basics/how-to-access-your-game-panel",
+              "game-panel/game-panel-basics/how-to-connect-via-sftp",
+              "game-panel/game-panel-basics/how-to-use-the-console",
+              "game-panel/game-panel-basics/how-to-use-the-file-manager"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": []
+        "tab": "Minecraft Java",
+        "groups": [
+          {
+            "group": "Game Panel Guides",
+            "pages": [
+              "minecraft-java/game-panel-guides/creating-subusers-for-server-management",
+              "minecraft-java/game-panel-guides/getting-started-with-the-game-panel-dashboard",
+              "minecraft-java/game-panel-guides/how-to-schedule-server-backups-or-restarts",
+              "minecraft-java/game-panel-guides/how-to-start-stop-or-restart-your-server",
+              "minecraft-java/game-panel-guides/using-the-console-to-run-minecraft-commands"
+            ]
+          },
+          {
+            "group": "Minecraft Basics",
+            "pages": [
+              "minecraft-java/minecraft-basics/how-to-access-your-control-panel",
+              "minecraft-java/minecraft-basics/how-to-connect-to-your-minecraft-server",
+              "minecraft-java/minecraft-basics/how-to-reset-or-restart-your-minecraft-server",
+              "minecraft-java/minecraft-basics/java-vs-bedrock-edition",
+              "minecraft-java/minecraft-basics/understanding-server-slots-and-performance",
+              "minecraft-java/minecraft-basics/what-is-a-minecraft-server-and-how-does-it-work"
+            ]
+          },
+          {
+            "group": "Modpacks and Plugins",
+            "pages": [
+              "minecraft-java/modpacks-and-plugins/adding-custom-mods-to-your-server",
+              "minecraft-java/modpacks-and-plugins/how-to-fix-mod-compatibility-issues",
+              "minecraft-java/modpacks-and-plugins/how-to-install-a-minecraft-modpack-curseforge-ftb-technic-and-more",
+              "minecraft-java/modpacks-and-plugins/how-to-install-a-minecraft-plugin",
+              "minecraft-java/modpacks-and-plugins/how-to-install-bukkit-or-spigot-plugins",
+              "minecraft-java/modpacks-and-plugins/installing-forge-or-fabric-on-your-minecraft-server",
+              "minecraft-java/modpacks-and-plugins/recommended-plugin-lists-for-minecraft-survival-creative-servers",
+              "minecraft-java/modpacks-and-plugins/understanding-minecraft-mod-loaders-forge-fabric-neoforge-quilt"
+            ]
+          },
+          {
+            "group": "Server Settings",
+            "pages": [
+              "minecraft-java/server-settings/adjusting-view-distance-and-max-players",
+              "minecraft-java/server-settings/changing-the-world-seed-or-starting-a-new-world",
+              "minecraft-java/server-settings/editing-the-server.properties-file-game-mode-pvp-etc.",
+              "minecraft-java/server-settings/how-to-change-server-version-vanilla-spigot-forge",
+              "minecraft-java/server-settings/how-to-enable-disable-whitelist",
+              "minecraft-java/server-settings/how-to-optimize-jvm-arguments",
+              "minecraft-java/server-settings/how-to-set-up-op-admin-permissions"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "minecraft-java/troubleshooting/how-to-check-server-logs-for-errors",
+              "minecraft-java/troubleshooting/how-to-fix-high-ping-or-lag-on-minecraft-servers",
+              "minecraft-java/troubleshooting/my-mods-plugins-arent-working-what-to-do",
+              "minecraft-java/troubleshooting/server-outdated-or-incompatible-version",
+              "minecraft-java/troubleshooting/server-wont-start-common-causes-and-fixes",
+              "minecraft-java/troubleshooting/why-cant-i-connect-to-my-server"
+            ]
+          }
+        ]
       },
       {
-        "tab": "Minecraft-Bedrock",
+        "tab": "Minecraft Bedrock",
         "groups": [
           {
             "group": "Addons and Plugins",
