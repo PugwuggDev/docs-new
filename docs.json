@@ -161,6 +161,11 @@
           "anchor": "Website",
           "href": "https://hostbyte.net",
           "icon": "globe"
+        },
+        {
+          "anchor": "Game Panel",
+          "href": "https://game.hostbyte.net",
+          "icon": "globe"
         }
       ]
     }
