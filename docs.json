@@ -11,6 +11,17 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Home",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "home/welcome"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Game Panel",
         "groups": [
           {
