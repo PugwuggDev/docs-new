@@ -104,10 +104,10 @@
           {
             "group": "Tips and Guides",
             "pages": [
-              "minecraft-java/tips-and-guides/advanced-building-techniques",
-              "minecraft-java/tips-and-guides/how-to-optimize-server-performance",
-              "minecraft-java/tips-and-guides/understanding-redstone-mechanics",
-              "minecraft-java/tips-and-guides/ways-to-enhance-multiplayer-experience"
+              "minecraft-java/tips-and-guides/best-view-distance-and-simulation-distance-for-java",
+              "minecraft-java/tips-and-guides/how-to-change-your-java-server-version-paper-spigot-fabric-forge",
+              "minecraft-java/tips-and-guides/how-to-join-your-java-server",
+              "minecraft-java/tips-and-guides/how-to-whitelist-players-on-your-java-server"
             ]
           }
         ]
