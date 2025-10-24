@@ -1,0 +1,111 @@
+---
+title: "How to adjust view distance for Java performance"
+description: "Lowering your server’s view-distance and simulation-distance can greatly improve performance (TPS) by loading and ticking fewer chunks. This guide shows where to change these settings for Vanilla/Paper/Spigot and how to pick good values."
+---
+
+## What These Settings Do
+
+- **view-distance** — How many chunk rings are _sent to players_ (what they can see). Affects bandwidth and memory.
+- **simulation-distance** — How many chunk rings are _actively ticked_ (mobs AI, redstone, farms). Affects CPU the most.
+
+_Tip:_ Reducing **simulation-distance** usually gives the biggest lag reduction on survival servers with farms.
+
+## Before You Start
+
+- **Back up** your server (optional but recommended).
+- Tell players you’re adjusting performance settings; it may change how far they can see or how farms behave at range.
+
+## Step 1: Stop Your Server
+
+1. Log in to the [<u>HostByte Game Panel</u>](https://game.hostbyte.net/).
+2. Open your **Java** server and click **Stop** until it shows _Offline_.
+
+![67 Stop Server Pn](/images/67_Stop-Server.png)
+
+---
+
+## Step 2: Edit `server.properties` (All Java Servers)
+
+1. Go to **File Manager** → open `server.properties`.
+2. Find or add the lines and set your values, for example:
+
+   ```
+   view-distance=8
+   simulation-distance=6
+   
+   ```
+3. Click **Save**.
+
+   <img
+     src="/images/68_view-distance.png"
+     alt="68 View Distance Pn"
+     title="68 View Distance Pn"
+     style={{ width:"22%" }}
+     className="mx-auto"
+   />
+
+<img
+  src="/images/69_simulation-distance.png"
+  alt="69 Simulation Distance Pn"
+  title="69 Simulation Distance Pn"
+  style={{ width:"22%" }}
+  className="mr-auto"
+/>
+
+  **Notes:**\
+• `simulation-distance` exists on modern versions. If missing on older versions, only `view-distance` is available.\
+• Lower numbers = fewer chunks = better performance, but players see/tick less.
+
+---
+
+## Step 3 (Optional): Paper/Spigot Per-World Settings
+
+Paper and Spigot let you fine-tune or override per world.
+
+### Paper
+
+- **Defaults file:** `paper-world-defaults.yml` (global defaults)
+- **Per-world file:** `world/paper-world.yml` (and for Nether/End)
+
+Look for keys like `view-distance` and `simulation-distance` in those files to override the server.properties values per world.
+
+### Spigot (Legacy/Older)
+
+- **File:** `spigot.yml` → `world-settings` → `default` or the specific world
+
+Older Spigot versions exposed `view-distance` per-world here. On newer versions, prefer `server.properties` and your platform’s docs.
+
+## Step 4: Start & Test
+
+1. Return to the dashboard and click **Start**.
+2. Join the server and confirm chunks load as expected.
+3. Monitor **TPS** with timings or a profiler plugin (e.g., _spark_).
+
+## Recommended Starting Values
+
+- **Small servers / survival SMP:** `view-distance=8`, `simulation-distance=6`
+- **Mid-size / events:** `view-distance=10`, `simulation-distance=8`
+- **Performance under load:** try `6 / 4`, then raise gradually
+
+Increase slowly and observe TPS. Values below `4` simulation may affect some farm mechanics at range.
+
+## Common Issues & Fixes
+
+### “No change after restart”
+
+- Ensure you edited the correct `server.properties` for this server.
+- Paper/Spigot per-world files can override. Check `paper-world*.yml` or `spigot.yml`.
+
+### Players complain they can’t see as far
+
+- Raise `view-distance` a little; keep `simulation-distance` conservative for TPS.
+
+### Farms stop when players move away
+
+- Increase `simulation-distance` modestly or keep players closer to the farms.
+
+## Best Practices
+
+- Change one value at a time and test during peak hours.
+- Favor lowering `simulation-distance` first for CPU relief.
+- Document your final settings for staff and future updates.
